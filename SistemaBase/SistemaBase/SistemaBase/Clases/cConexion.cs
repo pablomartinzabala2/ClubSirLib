@@ -11,13 +11,14 @@ namespace SistemaBase.Clases
         public static string GetConexion()
         {
             //string cadena = SistemaFact.Properties.Settings.Default.JOYConnectionString1;
+            string cadena = SistemaBase.Properties.Settings.Default.ClubSirioConnectionString;  
             //nueva cadena de conexion 
-           // string cad = "Data Source=DESKTOP-PICJCLR\\SQLEXPRESS;Initial Catalog=ClubSirio;Integrated Security=True;Trust Server Certificate=True";
+            // string cad = "Data Source=DESKTOP-PICJCLR\\SQLEXPRESS;Initial Catalog=ClubSirio;Integrated Security=True;Trust Server Certificate=True";
             string cad = "Data Source=DESKTOP-PICJCLR\\SQLEXPRESS;Initial Catalog=ClubSirio;Integrated Security=True;";
             // string cadena = "Data Source=DESKTOP-PICJCLR\\SQLEXPRESS;Initial Catalog=ClubSirio;Integrated Security=True;TrustServerCertificate=true";
             //DESKTOP-I0OF5F9\SQLEXPRESS
             //string cadena = "Data Source=DESKTOP-I0OF5F9\\SQLEXPRESS;Initial Catalog=JOY;Integrated Security=True";
-            return cad;
+            return cadena;
         }
     }
 }

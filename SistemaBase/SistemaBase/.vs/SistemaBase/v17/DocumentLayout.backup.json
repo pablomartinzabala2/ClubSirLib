@@ -1,26 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\PROGRAMACION\\CLUB\\cLUBsIRIOlIBANES\\SistemaBase\\SistemaBase\\",
+  "WorkspaceRootPath": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\club\\clubsiriolibanes\\sistemabase\\sistemabase\\sistemabase\\frmabmsocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\frmabmsocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\clubsirio\\clubsirlib\\sistemabase\\sistemabase\\sistemabase\\frmreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\frmreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\club\\clubsiriolibanes\\sistemabase\\sistemabase\\sistemabase\\frmabmsocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\frmabmsocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\clubsirio\\clubsirlib\\sistemabase\\sistemabase\\sistemabase\\frmreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\frmreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\club\\clubsiriolibanes\\sistemabase\\sistemabase\\sistemabase\\clases\\cdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\clases\\cdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\clubsirio\\clubsirlib\\sistemabase\\sistemabase\\sistemabase\\reporteinforme.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\reporteinforme.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\club\\clubsiriolibanes\\sistemabase\\sistemabase\\sistemabase\\clases\\cconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\clubsirio\\clubsirlib\\sistemabase\\sistemabase\\sistemabase\\dsreporte.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\dsreporte.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\sistemabase\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\clubsirio\\clubsirlib\\sistemabase\\sistemabase\\sistemabase\\reporteparametro.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\reporteparametro.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\clubsirio\\clubsirlib\\sistemabase\\sistemabase\\sistemabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\clubsirio\\clubsirlib\\sistemabase\\sistemabase\\sistemabase\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\clubsirio\\clubsirlib\\sistemabase\\sistemabase\\sistemabase\\clases\\cconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\clases\\cconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|d:\\programacion\\club\\clubsiriolibanes\\sistemabase\\sistemabase\\sistemabase\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\sistemabase\\clases\\cdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\clases\\cdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\sistemabase\\frmabmsocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\frmabmsocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\sistemabase\\frmabmsocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7F5616C-1606-45D5-8674-89DEC50FE3BC}|SistemaBase\\SistemaBase.csproj|solutionrelative:sistemabase\\frmabmsocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +58,155 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReporteInforme.rdlc [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\ReporteInforme.rdlc",
+              "RelativeDocumentMoniker": "SistemaBase\\ReporteInforme.rdlc",
+              "ToolTip": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\ReporteInforme.rdlc [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaBase\\ReporteInforme.rdlc [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2024-11-14T16:23:13.415Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DsReporte.xsd",
+              "DocumentMoniker": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\DsReporte.xsd",
+              "RelativeDocumentMoniker": "SistemaBase\\DsReporte.xsd",
+              "ToolTip": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\DsReporte.xsd",
+              "RelativeToolTip": "SistemaBase\\DsReporte.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2024-11-14T16:17:48.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmAbmSocio.cs",
-              "DocumentMoniker": "D:\\PROGRAMACION\\CLUB\\cLUBsIRIOlIBANES\\SistemaBase\\SistemaBase\\SistemaBase\\FrmAbmSocio.cs",
-              "RelativeDocumentMoniker": "SistemaBase\\FrmAbmSocio.cs",
-              "ToolTip": "D:\\PROGRAMACION\\CLUB\\cLUBsIRIOlIBANES\\SistemaBase\\SistemaBase\\SistemaBase\\FrmAbmSocio.cs*",
-              "RelativeToolTip": "SistemaBase\\FrmAbmSocio.cs*",
-              "ViewState": "AgIAADwAAAAAAAAAAAAcwEoAAAAJAAAAAAAAAA==",
+              "Title": "FrmReporte.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\FrmReporte.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\FrmReporte.cs",
+              "ToolTip": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\FrmReporte.cs*",
+              "RelativeToolTip": "SistemaBase\\FrmReporte.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAnwBwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T13:58:26.64Z",
+              "WhenOpened": "2024-11-14T15:55:24.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FrmAbmSocio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\PROGRAMACION\\CLUB\\cLUBsIRIOlIBANES\\SistemaBase\\SistemaBase\\SistemaBase\\FrmAbmSocio.cs",
-              "RelativeDocumentMoniker": "SistemaBase\\FrmAbmSocio.cs",
-              "ToolTip": "D:\\PROGRAMACION\\CLUB\\cLUBsIRIOlIBANES\\SistemaBase\\SistemaBase\\SistemaBase\\FrmAbmSocio.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "SistemaBase\\FrmAbmSocio.cs [Dise\u00F1o]*",
+              "Title": "FrmReporte.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\FrmReporte.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\FrmReporte.cs",
+              "ToolTip": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\FrmReporte.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "SistemaBase\\FrmReporte.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T13:54:04.661Z",
+              "WhenOpened": "2024-11-14T15:53:42.752Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "App.config",
-              "DocumentMoniker": "D:\\PROGRAMACION\\CLUB\\cLUBsIRIOlIBANES\\SistemaBase\\SistemaBase\\SistemaBase\\App.config",
+              "DocumentMoniker": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\App.config",
               "RelativeDocumentMoniker": "SistemaBase\\App.config",
-              "ToolTip": "D:\\PROGRAMACION\\CLUB\\cLUBsIRIOlIBANES\\SistemaBase\\SistemaBase\\SistemaBase\\App.config",
+              "ToolTip": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\App.config",
               "RelativeToolTip": "SistemaBase\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-11-14T13:50:07.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "ReporteParametro.rdlc [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\ReporteParametro.rdlc",
+              "RelativeDocumentMoniker": "SistemaBase\\ReporteParametro.rdlc",
+              "ToolTip": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\ReporteParametro.rdlc [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaBase\\ReporteParametro.rdlc [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2024-11-14T16:05:12.503Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\Program.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\Program.cs",
+              "ToolTip": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\Program.cs",
+              "RelativeToolTip": "SistemaBase\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowBQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T14:51:20.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Principal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\Principal.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\Principal.cs",
+              "ToolTip": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\Principal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaBase\\Principal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T15:54:05.073Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "cDb.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\Clases\\cDb.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\Clases\\cDb.cs",
+              "ToolTip": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\Clases\\cDb.cs",
+              "RelativeToolTip": "SistemaBase\\Clases\\cDb.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAABsAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T13:43:22.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "cConexion.cs",
-              "DocumentMoniker": "D:\\PROGRAMACION\\CLUB\\cLUBsIRIOlIBANES\\SistemaBase\\SistemaBase\\SistemaBase\\Clases\\cConexion.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\Clases\\cConexion.cs",
               "RelativeDocumentMoniker": "SistemaBase\\Clases\\cConexion.cs",
-              "ToolTip": "D:\\PROGRAMACION\\CLUB\\cLUBsIRIOlIBANES\\SistemaBase\\SistemaBase\\SistemaBase\\Clases\\cConexion.cs",
+              "ToolTip": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\Clases\\cConexion.cs",
               "RelativeToolTip": "SistemaBase\\Clases\\cConexion.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwBQAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T13:43:29.374Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "cDb.cs",
-              "DocumentMoniker": "D:\\PROGRAMACION\\CLUB\\cLUBsIRIOlIBANES\\SistemaBase\\SistemaBase\\SistemaBase\\Clases\\cDb.cs",
-              "RelativeDocumentMoniker": "SistemaBase\\Clases\\cDb.cs",
-              "ToolTip": "D:\\PROGRAMACION\\CLUB\\cLUBsIRIOlIBANES\\SistemaBase\\SistemaBase\\SistemaBase\\Clases\\cDb.cs",
-              "RelativeToolTip": "SistemaBase\\Clases\\cDb.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAAB8AAAAMAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "FrmAbmSocio.cs",
+              "DocumentMoniker": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\FrmAbmSocio.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\FrmAbmSocio.cs",
+              "ToolTip": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\FrmAbmSocio.cs",
+              "RelativeToolTip": "SistemaBase\\FrmAbmSocio.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAEoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T13:43:22.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T13:58:26.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FrmAbmSocio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\PROGRAMACION\\CLUBSIRIO\\ClubSirLib\\SistemaBase\\SistemaBase\\SistemaBase\\FrmAbmSocio.cs",
+              "RelativeDocumentMoniker": "SistemaBase\\FrmAbmSocio.cs",
+              "ToolTip": "D:\\PROGRAMACION\\CLUB\\cLUBsIRIOlIBANES\\SistemaBase\\SistemaBase\\SistemaBase\\FrmAbmSocio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\CLUB\\cLUBsIRIOlIBANES\\SistemaBase\\SistemaBase\\SistemaBase\\FrmAbmSocio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T13:54:04.661Z"
             }
           ]
         }
