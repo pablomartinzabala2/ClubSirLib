@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAbmSocio));
             this.Grupo = new System.Windows.Forms.GroupBox();
+            this.cmb_CodCategoria = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cmb_Sexo = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txt_Email = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,14 +52,14 @@
             this.btnAbrir = new System.Windows.Forms.ToolStripButton();
             this.btnIGregarColor = new System.Windows.Forms.ToolStripButton();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cmb_Sexo = new System.Windows.Forms.ComboBox();
             this.Grupo.SuspendLayout();
             this.BarraBotones.SuspendLayout();
             this.SuspendLayout();
             // 
             // Grupo
             // 
+            this.Grupo.Controls.Add(this.cmb_CodCategoria);
+            this.Grupo.Controls.Add(this.label6);
             this.Grupo.Controls.Add(this.cmb_Sexo);
             this.Grupo.Controls.Add(this.label5);
             this.Grupo.Controls.Add(this.txtCodigo);
@@ -69,18 +73,56 @@
             this.Grupo.Controls.Add(this.label1);
             this.Grupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Grupo.Location = new System.Drawing.Point(13, 55);
-            this.Grupo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Grupo.Margin = new System.Windows.Forms.Padding(4);
             this.Grupo.Name = "Grupo";
-            this.Grupo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Grupo.Padding = new System.Windows.Forms.Padding(4);
             this.Grupo.Size = new System.Drawing.Size(484, 342);
             this.Grupo.TabIndex = 0;
             this.Grupo.TabStop = false;
             this.Grupo.Text = "Información del Socio";
             // 
+            // cmb_CodCategoria
+            // 
+            this.cmb_CodCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_CodCategoria.FormattingEnabled = true;
+            this.cmb_CodCategoria.Location = new System.Drawing.Point(146, 193);
+            this.cmb_CodCategoria.Name = "cmb_CodCategoria";
+            this.cmb_CodCategoria.Size = new System.Drawing.Size(201, 24);
+            this.cmb_CodCategoria.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(21, 193);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 17);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Categoría";
+            // 
+            // cmb_Sexo
+            // 
+            this.cmb_Sexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Sexo.FormattingEnabled = true;
+            this.cmb_Sexo.Location = new System.Drawing.Point(146, 161);
+            this.cmb_Sexo.Name = "cmb_Sexo";
+            this.cmb_Sexo.Size = new System.Drawing.Size(201, 24);
+            this.cmb_Sexo.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(21, 161);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 17);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Genero";
+            // 
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(193, 224);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.Multiline = true;
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(73, 24);
@@ -90,7 +132,7 @@
             // txt_Email
             // 
             this.txt_Email.Location = new System.Drawing.Point(146, 126);
-            this.txt_Email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Email.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Email.Name = "txt_Email";
             this.txt_Email.Size = new System.Drawing.Size(307, 23);
             this.txt_Email.TabIndex = 7;
@@ -108,7 +150,7 @@
             // txt_Nombre
             // 
             this.txt_Nombre.Location = new System.Drawing.Point(146, 95);
-            this.txt_Nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Nombre.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(307, 23);
             this.txt_Nombre.TabIndex = 5;
@@ -126,7 +168,7 @@
             // txt_Apellido
             // 
             this.txt_Apellido.Location = new System.Drawing.Point(146, 64);
-            this.txt_Apellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Apellido.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Apellido.Name = "txt_Apellido";
             this.txt_Apellido.Size = new System.Drawing.Size(307, 23);
             this.txt_Apellido.TabIndex = 3;
@@ -144,10 +186,11 @@
             // txt_NroDoc
             // 
             this.txt_NroDoc.Location = new System.Drawing.Point(146, 33);
-            this.txt_NroDoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_NroDoc.Margin = new System.Windows.Forms.Padding(4);
             this.txt_NroDoc.Name = "txt_NroDoc";
             this.txt_NroDoc.Size = new System.Drawing.Size(307, 23);
             this.txt_NroDoc.TabIndex = 1;
+            this.txt_NroDoc.Leave += new System.EventHandler(this.txt_NroDoc_Leave);
             // 
             // label1
             // 
@@ -197,6 +240,7 @@
             this.btnEditar.Size = new System.Drawing.Size(36, 36);
             this.btnEditar.Text = "toolStripButton2";
             this.btnEditar.ToolTipText = "Modificar";
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnEliminar
             // 
@@ -207,6 +251,7 @@
             this.btnEliminar.Size = new System.Drawing.Size(36, 36);
             this.btnEliminar.Text = "toolStripButton3";
             this.btnEliminar.ToolTipText = "Eliminar";
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnAceptar
             // 
@@ -226,6 +271,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(36, 36);
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnAbrir
             // 
@@ -235,6 +281,7 @@
             this.btnAbrir.Name = "btnAbrir";
             this.btnAbrir.Size = new System.Drawing.Size(36, 36);
             this.btnAbrir.Text = "Abrir";
+            this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
             // 
             // btnIGregarColor
             // 
@@ -254,25 +301,7 @@
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(36, 36);
             this.btnSalir.Text = "Salir";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 161);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 17);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Genero";
-            // 
-            // cmb_Sexo
-            // 
-            this.cmb_Sexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_Sexo.FormattingEnabled = true;
-            this.cmb_Sexo.Location = new System.Drawing.Point(146, 161);
-            this.cmb_Sexo.Name = "cmb_Sexo";
-            this.cmb_Sexo.Size = new System.Drawing.Size(201, 24);
-            this.cmb_Sexo.TabIndex = 10;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // FrmAbmSocio
             // 
@@ -281,7 +310,7 @@
             this.ClientSize = new System.Drawing.Size(512, 426);
             this.Controls.Add(this.BarraBotones);
             this.Controls.Add(this.Grupo);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmAbmSocio";
             this.Text = "Formulario de Socios";
             this.Load += new System.EventHandler(this.FrmAbmSocio_Load);
@@ -317,5 +346,7 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.ComboBox cmb_Sexo;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cmb_CodCategoria;
+        private System.Windows.Forms.Label label6;
     }
 }

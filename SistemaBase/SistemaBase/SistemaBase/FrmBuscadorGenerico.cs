@@ -21,6 +21,8 @@ namespace SistemaBase
         {
             cFunciones fun = new Clases.cFunciones();
             fun.EstiloBotones(btnAceptar);
+            CargarCombo();
+            
         }
 
         private void CargarCombo()

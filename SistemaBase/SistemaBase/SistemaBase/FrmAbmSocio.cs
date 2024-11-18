@@ -61,6 +61,14 @@ namespace SistemaBase
             Grupo.Enabled = false;
             fun = new cFunciones();
             CargarGenero();
+            CargarCategoria();
+        }
+
+        private void CargarCategoria()
+        {
+            cCategoria cat = new cCategoria();
+            DataTable trdo = cat.GetCategoria();
+            fun.LlenarComboDatatable(cmb_CodCategoria, trdo, "Nombre", "CodCategoria");
         }
 
         private void CargarGenero()
@@ -89,6 +97,80 @@ namespace SistemaBase
             MessageBox.Show("Datos grabados correctamente");
             fun.LimpiarGenerico(this);
             Botonera(1);
+        }
+
+        private void btnAbrir_Click(object sender, EventArgs e)
+        {
+            Principal.OpcionesdeBusqueda = "Nombre;Apellido;NroDoc";
+            Principal.TablaPrincipal = "Socio";
+            Principal.OpcionesColumnasGrilla = "CodSocio;Nombre;Apellido;NroDoc";
+            Principal.ColumnasVisibles = "0;1;1;1";
+            Principal.ColumnasAncho = "0;250;250;80";
+            FrmBuscadorGenerico form = new FrmBuscadorGenerico();
+            form.FormClosing += new FormClosingEventHandler(form_FormClosing);
+            form.ShowDialog();
+        }
+
+        private void form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (Principal.CodigoPrincipalAbm != null)
+            {
+                Botonera(3);
+                txtCodigo.Text = Principal.CodigoPrincipalAbm.ToString();
+
+                fun.CargarControles(this, "Socio", "CodSocio", txtCodigo.Text);
+
+            }
+            Grupo.Enabled = false;
+
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Botonera(2);
+            Grupo.Enabled = true;
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            string msj = "Confirma eliminar el Cliente ";
+            var result = MessageBox.Show(msj, "Información",
+                                 MessageBoxButtons.YesNo,
+                                 MessageBoxIcon.Question);
+
+            // If the no button was pressed ...
+            if (result == DialogResult.No)
+            {
+                return;
+            }
+
+            Clases.cFunciones fun = new Clases.cFunciones();
+            fun.EliminarGenerico("Socio", "CodSocio", txtCodigo.Text);
+            MessageBox.Show("El cliente se ha eliminado de la base", "Sistema");
+            fun.LimpiarGenerico(this);
+            txtCodigo.Text = "";
+            Botonera(1);
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {  
+            Botonera(1);
+            Clases.cFunciones fun = new Clases.cFunciones();
+            fun.LimpiarGenerico(this);
+            txtCodigo.Text = "";
+        }
+
+        private void txt_NroDoc_Leave(object sender, EventArgs e)
+        {
+            if (txt_NroDoc.Text !="")
+            {
+
+            }
         }
     }
 }

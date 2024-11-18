@@ -17,8 +17,8 @@ namespace SistemaBase
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // Application.Run(new FrmAbmUsuario());
-             // Application.Run(new FrmAbmSocio());
-            Application.Run(new FrmReporte());
+              Application.Run(new FrmAbmSocio());
+           // Application.Run(new FrmReporte());
         }
     }
 }

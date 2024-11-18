@@ -52,10 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\cCategoria.cs" />
     <Compile Include="Clases\cConexion.cs" />
     <Compile Include="Clases\cDb.cs" />
     <Compile Include="Clases\cFunciones.cs" />
     <Compile Include="Clases\Class1.cs" />
+    <Compile Include="Clases\cSocio.cs" />
     <Compile Include="Clases\cUsuario.cs" />
     <Compile Include="DsReporte.Designer.cs">
       <AutoGen>True</AutoGen>
