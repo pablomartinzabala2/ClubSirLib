@@ -167,9 +167,20 @@ namespace SistemaBase
 
         private void txt_NroDoc_Leave(object sender, EventArgs e)
         {
+            string NroDoc = "";
+            cSocio Socio = new cSocio();
             if (txt_NroDoc.Text !="")
             {
-
+                NroDoc = txt_NroDoc.Text;
+                DataTable trdo = Socio.GetSocioxNroDoc(NroDoc);
+                if (trdo.Rows.Count >0)
+                {
+                    if (trdo.Rows[0]["CodSocio"].ToString ()!="")
+                    {
+                        txtCodigo.Text = trdo.Rows[0]["CodSocio"].ToString();
+                        fun.CargarControles(this, "Socio", "CodSocio", txtCodigo.Text);
+                    }
+                }
             }
         }
     }
