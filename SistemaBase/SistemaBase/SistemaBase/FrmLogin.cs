@@ -20,7 +20,7 @@ namespace SistemaBase
         private void FrmLogin_Load(object sender, EventArgs e)
         {
             cFunciones fun = new cFunciones();
-            fun.EstiloBotones(btnIngreso);
+          //  fun.EstiloBotones(btnIngreso);
         }
 
         private void btnIngreso_Click(object sender, EventArgs e)

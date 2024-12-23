@@ -62,6 +62,24 @@ namespace SistemaBase
             fun = new cFunciones();
             CargarGenero();
             CargarCategoria();
+            CargarTipoDoc();
+            
+        }
+
+        private void CargarTipoDoc()
+        {
+            string sql = "select * from TipoDocumento order by Nombre ";
+            DataTable trdo = cDb.GetDatatable(sql);
+            cFunciones fun = new cFunciones();
+            fun.LlenarComboDatatable(cmb_CodTipoDoc, trdo, "Nombre", "CodTipoDoc");
+        }
+
+        private void CargarGenero()
+        {  
+            string sql = "select * from Genero order by Nombre ";
+            DataTable trdo = cDb.GetDatatable(sql);
+            cFunciones fun = new cFunciones();
+            fun.LlenarComboDatatable(cmb_CodGenero, trdo, "Nombre", "Codigo");
         }
 
         private void CargarCategoria()
@@ -71,16 +89,7 @@ namespace SistemaBase
             fun.LlenarComboDatatable(cmb_CodCategoria, trdo, "Nombre", "CodCategoria");
         }
 
-        private void CargarGenero()
-        {
-            cFunciones fun = new cFunciones();
-            DataTable tb = fun.CrearTabla("Codigo;Nombre");
-            tb = fun.AgregarFilas(tb, "1;Masculino");
-            tb = fun.AgregarFilas(tb, "2;Femenino");
-            tb = fun.AgregarFilas(tb, "3;Sin Definir");
-            fun.LlenarComboDatatable(cmb_Sexo, tb, "Nombre", "Codigo");
-            
-        }
+       
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
@@ -119,6 +128,7 @@ namespace SistemaBase
                 txtCodigo.Text = Principal.CodigoPrincipalAbm.ToString();
 
                 fun.CargarControles(this, "Socio", "CodSocio", txtCodigo.Text);
+                ArmarNumeroSoxio();
 
             }
             Grupo.Enabled = false;
@@ -182,6 +192,67 @@ namespace SistemaBase
                     }
                 }
             }
+
+           // ArmarNumeroSoxio();
+        }
+
+        private void ArmarNumeroSoxio()
+        {
+            string Genero = "0";
+            string CatSocio = "0";
+            string NroSocio = "";
+            string NroDocumento = "";
+            if (cmb_CodGenero.SelectedIndex >0)
+            {
+                int i = Convert.ToInt32 (cmb_CodGenero.SelectedValue);
+                switch(i)
+                {
+                    case  1:
+                        Genero = "10";
+                        break;
+                    case 2:
+                        Genero = "20";
+                        break;
+                    case 3:
+                        Genero = "30";
+                        break;
+                }            
+            }
+
+            if (cmb_CodCategoria.SelectedIndex >0 )
+            {
+                int Codigo = Convert.ToInt32(cmb_CodCategoria.SelectedValue);
+                string Nombre = GetCategoria(Codigo);
+                if (Nombre !="")
+                {
+                    string[] Vec = Nombre.Split('-');
+                    CatSocio = Vec[0];  
+                }
+            }
+
+            NroDocumento = txt_NroDoc.Text;
+            NroSocio = Genero + "-" + NroDocumento + "-" + CatSocio;
+            txt_NumeroSocio.Text = NroSocio;
+        }
+
+        private string GetCategoria (int CodCategoria)
+        {
+            string Nombre = "";
+            string sql = "select Nombre from Categoria ";
+            sql = sql + " where CodCategoria =" + CodCategoria.ToString();
+            DataTable trdo = cDb.GetDatatable(sql);
+            if (trdo.Rows.Count >0)
+            {
+                if (trdo.Rows[0]["Nombre"].ToString() != "")
+                    Nombre = trdo.Rows[0]["Nombre"].ToString();
+            }
+            return Nombre;
+        }
+
+        private void cmb_CodCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmb_CodCategoria.SelectedIndex > 0)
+                ArmarNumeroSoxio();
         }
     }
 }

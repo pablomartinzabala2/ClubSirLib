@@ -33,9 +33,9 @@ namespace SistemaBase
 
         private void ShowNewForm(object sender, EventArgs e)
         {
-            Form childForm = new Form();
+            FrmAbmSocio childForm = new FrmAbmSocio();
             childForm.MdiParent = this;
-            childForm.Text = "Window " + childFormNumber++;
+           // childForm.Text = "Window " + childFormNumber++;
             childForm.Show();
         }
 
@@ -80,12 +80,12 @@ namespace SistemaBase
 
         private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            toolStrip.Visible = toolBarToolStripMenuItem.Checked;
+          //  toolStrip.Visible = toolBarToolStripMenuItem.Checked;
         }
 
         private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
+           // statusStrip.Visible = statusBarToolStripMenuItem.Checked;
         }
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)

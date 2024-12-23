@@ -30,16 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAbmSocio));
             this.Grupo = new System.Windows.Forms.GroupBox();
+            this.cmb_CodGenero = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cmb_CodTipoDoc = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.txt_Direccion = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_NumeroSocio = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_Acta = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cmb_CodCategoria = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.cmb_Sexo = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txt_Email = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -58,22 +60,26 @@
             this.btnAbrir = new System.Windows.Forms.ToolStripButton();
             this.btnIGregarColor = new System.Windows.Forms.ToolStripButton();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
+            this.chk_ClubLaVoz = new System.Windows.Forms.CheckBox();
             this.Grupo.SuspendLayout();
             this.BarraBotones.SuspendLayout();
             this.SuspendLayout();
             // 
             // Grupo
             // 
+            this.Grupo.Controls.Add(this.chk_ClubLaVoz);
+            this.Grupo.Controls.Add(this.cmb_CodGenero);
+            this.Grupo.Controls.Add(this.label11);
+            this.Grupo.Controls.Add(this.cmb_CodTipoDoc);
+            this.Grupo.Controls.Add(this.label10);
             this.Grupo.Controls.Add(this.txt_Direccion);
             this.Grupo.Controls.Add(this.label9);
-            this.Grupo.Controls.Add(this.textBox2);
+            this.Grupo.Controls.Add(this.txt_NumeroSocio);
             this.Grupo.Controls.Add(this.label8);
             this.Grupo.Controls.Add(this.txt_Acta);
             this.Grupo.Controls.Add(this.label7);
             this.Grupo.Controls.Add(this.cmb_CodCategoria);
             this.Grupo.Controls.Add(this.label6);
-            this.Grupo.Controls.Add(this.cmb_Sexo);
-            this.Grupo.Controls.Add(this.label5);
             this.Grupo.Controls.Add(this.txtCodigo);
             this.Grupo.Controls.Add(this.txt_Email);
             this.Grupo.Controls.Add(this.label4);
@@ -88,42 +94,81 @@
             this.Grupo.Margin = new System.Windows.Forms.Padding(4);
             this.Grupo.Name = "Grupo";
             this.Grupo.Padding = new System.Windows.Forms.Padding(4);
-            this.Grupo.Size = new System.Drawing.Size(484, 382);
+            this.Grupo.Size = new System.Drawing.Size(484, 408);
             this.Grupo.TabIndex = 0;
             this.Grupo.TabStop = false;
             this.Grupo.Text = "Información del Socio";
             // 
+            // cmb_CodGenero
+            // 
+            this.cmb_CodGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_CodGenero.FormattingEnabled = true;
+            this.cmb_CodGenero.Location = new System.Drawing.Point(146, 23);
+            this.cmb_CodGenero.Name = "cmb_CodGenero";
+            this.cmb_CodGenero.Size = new System.Drawing.Size(201, 24);
+            this.cmb_CodGenero.TabIndex = 22;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(23, 20);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(56, 17);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Género";
+            // 
+            // cmb_CodTipoDoc
+            // 
+            this.cmb_CodTipoDoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_CodTipoDoc.FormattingEnabled = true;
+            this.cmb_CodTipoDoc.Location = new System.Drawing.Point(146, 50);
+            this.cmb_CodTipoDoc.Name = "cmb_CodTipoDoc";
+            this.cmb_CodTipoDoc.Size = new System.Drawing.Size(201, 24);
+            this.cmb_CodTipoDoc.TabIndex = 20;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(21, 50);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(65, 17);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "Tipo Doc";
+            // 
             // txt_Direccion
             // 
-            this.txt_Direccion.Location = new System.Drawing.Point(146, 286);
+            this.txt_Direccion.Location = new System.Drawing.Point(146, 323);
             this.txt_Direccion.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Direccion.Multiline = true;
             this.txt_Direccion.Name = "txt_Direccion";
-            this.txt_Direccion.Size = new System.Drawing.Size(307, 76);
+            this.txt_Direccion.Size = new System.Drawing.Size(307, 58);
             this.txt_Direccion.TabIndex = 18;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(21, 286);
+            this.label9.Location = new System.Drawing.Point(25, 323);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(67, 17);
             this.label9.TabIndex = 17;
             this.label9.Text = "Dirección";
             // 
-            // textBox2
+            // txt_NumeroSocio
             // 
-            this.textBox2.Location = new System.Drawing.Point(146, 255);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(307, 23);
-            this.textBox2.TabIndex = 16;
+            this.txt_NumeroSocio.Location = new System.Drawing.Point(146, 266);
+            this.txt_NumeroSocio.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_NumeroSocio.Name = "txt_NumeroSocio";
+            this.txt_NumeroSocio.ReadOnly = true;
+            this.txt_NumeroSocio.Size = new System.Drawing.Size(307, 23);
+            this.txt_NumeroSocio.TabIndex = 16;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(21, 255);
+            this.label8.Location = new System.Drawing.Point(27, 262);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(117, 17);
@@ -132,7 +177,7 @@
             // 
             // txt_Acta
             // 
-            this.txt_Acta.Location = new System.Drawing.Point(146, 224);
+            this.txt_Acta.Location = new System.Drawing.Point(146, 235);
             this.txt_Acta.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Acta.Name = "txt_Acta";
             this.txt_Acta.Size = new System.Drawing.Size(307, 23);
@@ -141,7 +186,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(21, 224);
+            this.label7.Location = new System.Drawing.Point(27, 235);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 17);
@@ -152,39 +197,21 @@
             // 
             this.cmb_CodCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_CodCategoria.FormattingEnabled = true;
-            this.cmb_CodCategoria.Location = new System.Drawing.Point(146, 193);
+            this.cmb_CodCategoria.Location = new System.Drawing.Point(146, 204);
             this.cmb_CodCategoria.Name = "cmb_CodCategoria";
             this.cmb_CodCategoria.Size = new System.Drawing.Size(201, 24);
             this.cmb_CodCategoria.TabIndex = 12;
+            this.cmb_CodCategoria.SelectedIndexChanged += new System.EventHandler(this.cmb_CodCategoria_SelectedIndexChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 193);
+            this.label6.Location = new System.Drawing.Point(23, 204);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 17);
             this.label6.TabIndex = 11;
             this.label6.Text = "Categoría";
-            // 
-            // cmb_Sexo
-            // 
-            this.cmb_Sexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_Sexo.FormattingEnabled = true;
-            this.cmb_Sexo.Location = new System.Drawing.Point(146, 161);
-            this.cmb_Sexo.Name = "cmb_Sexo";
-            this.cmb_Sexo.Size = new System.Drawing.Size(201, 24);
-            this.cmb_Sexo.TabIndex = 10;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 161);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 17);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Genero";
             // 
             // txtCodigo
             // 
@@ -200,7 +227,7 @@
             // 
             // txt_Email
             // 
-            this.txt_Email.Location = new System.Drawing.Point(146, 126);
+            this.txt_Email.Location = new System.Drawing.Point(146, 174);
             this.txt_Email.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Email.Name = "txt_Email";
             this.txt_Email.Size = new System.Drawing.Size(307, 23);
@@ -209,7 +236,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 126);
+            this.label4.Location = new System.Drawing.Point(21, 174);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 17);
@@ -218,7 +245,7 @@
             // 
             // txt_Nombre
             // 
-            this.txt_Nombre.Location = new System.Drawing.Point(146, 95);
+            this.txt_Nombre.Location = new System.Drawing.Point(146, 143);
             this.txt_Nombre.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(307, 23);
@@ -227,7 +254,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 95);
+            this.label3.Location = new System.Drawing.Point(21, 143);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 17);
@@ -236,7 +263,7 @@
             // 
             // txt_Apellido
             // 
-            this.txt_Apellido.Location = new System.Drawing.Point(146, 64);
+            this.txt_Apellido.Location = new System.Drawing.Point(146, 112);
             this.txt_Apellido.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Apellido.Name = "txt_Apellido";
             this.txt_Apellido.Size = new System.Drawing.Size(307, 23);
@@ -245,7 +272,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 64);
+            this.label2.Location = new System.Drawing.Point(21, 112);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 17);
@@ -254,7 +281,7 @@
             // 
             // txt_NroDoc
             // 
-            this.txt_NroDoc.Location = new System.Drawing.Point(146, 33);
+            this.txt_NroDoc.Location = new System.Drawing.Point(146, 81);
             this.txt_NroDoc.Margin = new System.Windows.Forms.Padding(4);
             this.txt_NroDoc.Name = "txt_NroDoc";
             this.txt_NroDoc.Size = new System.Drawing.Size(307, 23);
@@ -264,7 +291,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 33);
+            this.label1.Location = new System.Drawing.Point(21, 81);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 17);
@@ -285,7 +312,7 @@
             this.btnSalir});
             this.BarraBotones.Location = new System.Drawing.Point(0, 0);
             this.BarraBotones.Name = "BarraBotones";
-            this.BarraBotones.Size = new System.Drawing.Size(512, 39);
+            this.BarraBotones.Size = new System.Drawing.Size(522, 39);
             this.BarraBotones.TabIndex = 19;
             this.BarraBotones.Text = "toolStrip1";
             // 
@@ -372,11 +399,21 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // chk_ClubLaVoz
+            // 
+            this.chk_ClubLaVoz.AutoSize = true;
+            this.chk_ClubLaVoz.Location = new System.Drawing.Point(146, 296);
+            this.chk_ClubLaVoz.Name = "chk_ClubLaVoz";
+            this.chk_ClubLaVoz.Size = new System.Drawing.Size(103, 21);
+            this.chk_ClubLaVoz.TabIndex = 23;
+            this.chk_ClubLaVoz.Text = "Club La Voz";
+            this.chk_ClubLaVoz.UseVisualStyleBackColor = true;
+            // 
             // FrmAbmSocio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 450);
+            this.ClientSize = new System.Drawing.Size(522, 476);
             this.Controls.Add(this.BarraBotones);
             this.Controls.Add(this.Grupo);
             this.Margin = new System.Windows.Forms.Padding(5);
@@ -413,15 +450,18 @@
         private System.Windows.Forms.ToolStripButton btnIGregarColor;
         private System.Windows.Forms.ToolStripButton btnSalir;
         private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.ComboBox cmb_Sexo;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmb_CodCategoria;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_Direccion;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_NumeroSocio;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_Acta;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cmb_CodTipoDoc;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cmb_CodGenero;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.CheckBox chk_ClubLaVoz;
     }
 }
