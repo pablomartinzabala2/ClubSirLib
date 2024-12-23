@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAbmSocio));
             this.Grupo = new System.Windows.Forms.GroupBox();
+            this.chk_ClubLaVoz = new System.Windows.Forms.CheckBox();
             this.cmb_CodGenero = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.cmb_CodTipoDoc = new System.Windows.Forms.ComboBox();
@@ -60,13 +61,18 @@
             this.btnAbrir = new System.Windows.Forms.ToolStripButton();
             this.btnIGregarColor = new System.Windows.Forms.ToolStripButton();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
-            this.chk_ClubLaVoz = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dpFecha = new System.Windows.Forms.DateTimePicker();
+            this.txt_FechaAsociacion = new System.Windows.Forms.TextBox();
             this.Grupo.SuspendLayout();
             this.BarraBotones.SuspendLayout();
             this.SuspendLayout();
             // 
             // Grupo
             // 
+            this.Grupo.Controls.Add(this.txt_FechaAsociacion);
+            this.Grupo.Controls.Add(this.dpFecha);
+            this.Grupo.Controls.Add(this.label5);
             this.Grupo.Controls.Add(this.chk_ClubLaVoz);
             this.Grupo.Controls.Add(this.cmb_CodGenero);
             this.Grupo.Controls.Add(this.label11);
@@ -98,6 +104,16 @@
             this.Grupo.TabIndex = 0;
             this.Grupo.TabStop = false;
             this.Grupo.Text = "Información del Socio";
+            // 
+            // chk_ClubLaVoz
+            // 
+            this.chk_ClubLaVoz.AutoSize = true;
+            this.chk_ClubLaVoz.Location = new System.Drawing.Point(350, 295);
+            this.chk_ClubLaVoz.Name = "chk_ClubLaVoz";
+            this.chk_ClubLaVoz.Size = new System.Drawing.Size(103, 21);
+            this.chk_ClubLaVoz.TabIndex = 23;
+            this.chk_ClubLaVoz.Text = "Club La Voz";
+            this.chk_ClubLaVoz.UseVisualStyleBackColor = true;
             // 
             // cmb_CodGenero
             // 
@@ -399,15 +415,30 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // chk_ClubLaVoz
+            // label5
             // 
-            this.chk_ClubLaVoz.AutoSize = true;
-            this.chk_ClubLaVoz.Location = new System.Drawing.Point(146, 296);
-            this.chk_ClubLaVoz.Name = "chk_ClubLaVoz";
-            this.chk_ClubLaVoz.Size = new System.Drawing.Size(103, 21);
-            this.chk_ClubLaVoz.TabIndex = 23;
-            this.chk_ClubLaVoz.Text = "Club La Voz";
-            this.chk_ClubLaVoz.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(27, 296);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 17);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Fecha Alta";
+            // 
+            // dpFecha
+            // 
+            this.dpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dpFecha.Location = new System.Drawing.Point(146, 295);
+            this.dpFecha.Name = "dpFecha";
+            this.dpFecha.Size = new System.Drawing.Size(85, 23);
+            this.dpFecha.TabIndex = 71;
+            // 
+            // txt_FechaAsociacion
+            // 
+            this.txt_FechaAsociacion.Location = new System.Drawing.Point(237, 293);
+            this.txt_FechaAsociacion.Name = "txt_FechaAsociacion";
+            this.txt_FechaAsociacion.Size = new System.Drawing.Size(100, 23);
+            this.txt_FechaAsociacion.TabIndex = 72;
             // 
             // FrmAbmSocio
             // 
@@ -463,5 +494,8 @@
         private System.Windows.Forms.ComboBox cmb_CodGenero;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.CheckBox chk_ClubLaVoz;
+        private System.Windows.Forms.TextBox txt_FechaAsociacion;
+        private System.Windows.Forms.DateTimePicker dpFecha;
+        private System.Windows.Forms.Label label5;
     }
 }

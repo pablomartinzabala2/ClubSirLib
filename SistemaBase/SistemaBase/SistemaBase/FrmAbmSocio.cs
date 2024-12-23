@@ -93,6 +93,7 @@ namespace SistemaBase
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            txt_FechaAsociacion.Text = dpFecha.Value.ToShortDateString();
             //cFunciones fun = new Clases.cFunciones();
             if (txtCodigo.Text == "")
                 fun.GuardarNuevoGenerico(this, "Socio");
@@ -128,6 +129,11 @@ namespace SistemaBase
                 txtCodigo.Text = Principal.CodigoPrincipalAbm.ToString();
 
                 fun.CargarControles(this, "Socio", "CodSocio", txtCodigo.Text);
+                if (txt_FechaAsociacion.Text !="")
+                {
+                    DateTime Fecha = Convert.ToDateTime(txt_FechaAsociacion.Text);
+                    dpFecha.Value = Fecha;
+                }
                 ArmarNumeroSoxio();
 
             }
