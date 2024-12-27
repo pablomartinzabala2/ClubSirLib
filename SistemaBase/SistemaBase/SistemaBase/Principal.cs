@@ -26,6 +26,7 @@ namespace SistemaBase
         public static string CodigoPrincipalAbm;
         public static Int32 CodUsuarioLogueado;
         public static string NombreUsuarioLogueado;
+        public static Int32 CodSocio;
         public Principal()
         {
             InitializeComponent();

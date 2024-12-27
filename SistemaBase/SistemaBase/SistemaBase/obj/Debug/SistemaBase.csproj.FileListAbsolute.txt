@@ -34,6 +34,7 @@ D:\PROGRAMACION\CLUBSIRIO\ClubSirLib\SistemaBase\SistemaBase\SistemaBase\obj\Deb
 D:\PROGRAMACION\CLUBSIRIO\ClubSirLib\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.exe
 D:\PROGRAMACION\CLUBSIRIO\ClubSirLib\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.pdb
 D:\PROGRAMACION\CLUBSIRIO\ClubSirLib\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmReporte.resources
+D:\PROGRAMACION\CLUBSIRIO\ClubSirLib\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmReporteSociocs.resources
 D:\PROGRAMACION\CLUBSIRIO\ClubSirLib\SistemaBase\SistemaBase\SistemaBase\bin\Debug\Microsoft.SqlServer.Types.dll
 D:\PROGRAMACION\CLUBSIRIO\ClubSirLib\SistemaBase\SistemaBase\SistemaBase\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
 D:\PROGRAMACION\CLUBSIRIO\ClubSirLib\SistemaBase\SistemaBase\SistemaBase\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll

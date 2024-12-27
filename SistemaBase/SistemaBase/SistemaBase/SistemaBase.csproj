@@ -59,6 +59,11 @@
     <Compile Include="Clases\Class1.cs" />
     <Compile Include="Clases\cSocio.cs" />
     <Compile Include="Clases\cUsuario.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DsReporte.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -118,6 +123,12 @@
     <Compile Include="FrmReporte.Designer.cs">
       <DependentUpon>FrmReporte.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmReporteSociocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteSociocs.Designer.cs">
+      <DependentUpon>FrmReporteSociocs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +164,9 @@
     <EmbeddedResource Include="FrmReporte.resx">
       <DependentUpon>FrmReporte.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteSociocs.resx">
+      <DependentUpon>FrmReporteSociocs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +181,18 @@
     </Compile>
     <EmbeddedResource Include="ReporteInforme.rdlc" />
     <EmbeddedResource Include="ReporteParametro.rdlc" />
+    <EmbeddedResource Include="ReporteSocio.rdlc" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="DsReporte.xsc">
       <DependentUpon>DsReporte.xsd</DependentUpon>
     </None>
@@ -201,6 +227,7 @@
     <Content Include="Iconos\LIBRERIA.ico" />
     <Content Include="Iconos\Logo.jpg" />
     <Content Include="Iconos\Logo2.jpg" />
+    <Content Include="Iconos\logoSIRIO.jpg" />
     <Content Include="Iconos\page_add.ico" />
     <Content Include="Iconos\printer.ico" />
     <Content Include="Iconos\XXX.png" />

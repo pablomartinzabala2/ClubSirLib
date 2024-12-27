@@ -97,7 +97,12 @@ namespace SistemaBase
             txt_FechaNac.Text = daFechaNac.Value.ToShortDateString();
             //cFunciones fun = new Clases.cFunciones();
             if (txtCodigo.Text == "")
+            {
                 fun.GuardarNuevoGenerico(this, "Socio");
+                cSocio socio = new cSocio();
+                txtCodigo.Text = socio.GetMaxSocio().ToString();
+            }
+                
             else
             {
                 // if (txt_Ruta.Text != "")
@@ -105,9 +110,12 @@ namespace SistemaBase
                 fun.ModificarGenerico(this, "Socio", "CodSocio", txtCodigo.Text);
 
             }
+            Principal.CodSocio = Convert.ToInt32(txtCodigo.Text);
             MessageBox.Show("Datos grabados correctamente");
             fun.LimpiarGenerico(this);
             Botonera(1);
+            FrmReporteSociocs frm = new FrmReporteSociocs();
+            frm.Show();
         }
 
         private void btnAbrir_Click(object sender, EventArgs e)
