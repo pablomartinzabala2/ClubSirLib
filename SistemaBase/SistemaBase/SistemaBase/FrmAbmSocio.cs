@@ -94,6 +94,7 @@ namespace SistemaBase
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             txt_FechaAsociacion.Text = dpFecha.Value.ToShortDateString();
+            txt_FechaNac.Text = daFechaNac.Value.ToShortDateString();
             //cFunciones fun = new Clases.cFunciones();
             if (txtCodigo.Text == "")
                 fun.GuardarNuevoGenerico(this, "Socio");
@@ -134,6 +135,13 @@ namespace SistemaBase
                     DateTime Fecha = Convert.ToDateTime(txt_FechaAsociacion.Text);
                     dpFecha.Value = Fecha;
                 }
+                  
+                if (txt_FechaNac.Text != "")
+                {
+                    DateTime Fecha = Convert.ToDateTime(txt_FechaNac.Text);
+                    daFechaNac.Value = Fecha;
+                }
+
                 ArmarNumeroSoxio();
 
             }
