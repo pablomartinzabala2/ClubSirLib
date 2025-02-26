@@ -484,6 +484,7 @@
             this.btnIGregarColor.Size = new System.Drawing.Size(36, 36);
             this.btnIGregarColor.Text = "toolStripButton1";
             this.btnIGregarColor.ToolTipText = "Imprimir";
+            this.btnIGregarColor.Click += new System.EventHandler(this.btnIGregarColor_Click);
             // 
             // btnSalir
             // 

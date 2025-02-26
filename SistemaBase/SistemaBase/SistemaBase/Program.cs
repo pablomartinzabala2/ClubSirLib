@@ -17,7 +17,7 @@ namespace SistemaBase
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
              Application.Run(new FrmLogin());
-           // Application.Run(new FrmAbmSocio());
+         //   Application.Run(new FrmAbmSocio());
          //   Principal.CodSocio = 7;
            //  Application.Run(new FrmReporteSociocs());
         }

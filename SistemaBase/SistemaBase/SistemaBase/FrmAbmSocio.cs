@@ -276,5 +276,17 @@ namespace SistemaBase
             if (cmb_CodCategoria.SelectedIndex > 0)
                 ArmarNumeroSoxio();
         }
+
+        private void btnIGregarColor_Click(object sender, EventArgs e)
+        {
+            if (txtCodigo.Text =="")
+            {
+                MessageBox.Show("Debe seleccionar un socio ");
+                return;
+            }
+            Principal.CodSocio = Convert.ToInt32(txtCodigo.Text);
+            FrmReporteSociocs frm = new FrmReporteSociocs();
+            frm.Show();
+        }
     }
 }
