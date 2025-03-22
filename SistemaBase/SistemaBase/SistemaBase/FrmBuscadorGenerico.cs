@@ -20,7 +20,7 @@ namespace SistemaBase
         private void FrmBuscadorGenerico_Load(object sender, EventArgs e)
         {
             cFunciones fun = new Clases.cFunciones();
-            fun.EstiloBotones(btnAceptar);
+           // fun.EstiloBotones(btnAceptar);
             CargarCombo();
             
         }
