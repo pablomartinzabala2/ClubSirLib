@@ -20,7 +20,7 @@ namespace SistemaBase
         private void FrmBuscadorGenerico_Load(object sender, EventArgs e)
         {
             cFunciones fun = new Clases.cFunciones();
-           // fun.EstiloBotones(btnAceptar);
+          //  fun.EstiloBotones(btnAceptar);
             CargarCombo();
             
         }
@@ -53,7 +53,7 @@ namespace SistemaBase
             Combo.DisplayMember = "Texto";
             Combo.SelectedIndex = 0;
             cFunciones fun = new Clases.cFunciones();
-            fun.EstiloBotones(btnAceptar);
+          //  fun.EstiloBotones(btnAceptar);
         }
 
         private string GetCampoaBuscar()

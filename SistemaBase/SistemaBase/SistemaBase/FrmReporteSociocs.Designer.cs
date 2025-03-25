@@ -30,24 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SocioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSet1 = new SistemaBase.DataSet1();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SocioTableAdapter = new SistemaBase.DataSet1TableAdapters.SocioTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.SocioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // reportViewer1
-            // 
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.SocioBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "SistemaBase.Reporte.ReporteSocio2.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(12, 2);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(634, 436);
-            this.reportViewer1.TabIndex = 0;
             // 
             // SocioBindingSource
             // 
@@ -59,6 +48,17 @@
             this.DataSet1.DataSetName = "DataSet1";
             this.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // reportViewer1
+            // 
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.SocioBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "SistemaBase.Reporte.ReporteSocio2.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(12, 2);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(634, 527);
+            this.reportViewer1.TabIndex = 0;
+            // 
             // SocioTableAdapter
             // 
             this.SocioTableAdapter.ClearBeforeFill = true;
@@ -67,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 450);
+            this.ClientSize = new System.Drawing.Size(651, 531);
             this.Controls.Add(this.reportViewer1);
             this.Name = "FrmReporteSociocs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -12,7 +12,6 @@
                 <Value>=First(Fields!NumeroSocio.Value, "DataSet1")</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
-                  <Color>White</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -44,7 +43,6 @@
                 <Value>Asociado Nº:</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
-                  <Color>White</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -77,7 +75,6 @@
                 <Value>Tipo Socioº:</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
-                  <Color>White</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -110,7 +107,6 @@
                 <Value>=First(Fields!Categoria.Value, "DataSet1")</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
-                  <Color>White</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -143,7 +139,6 @@
                 <Value>=First(Fields!ApeNom.Value, "DataSet1")</Value>
                 <Style>
                   <FontSize>18pt</FontSize>
-                  <Color>White</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -170,10 +165,10 @@
         <Source>Embedded</Source>
         <Value>LogoDorado</Value>
         <Sizing>FitProportional</Sizing>
-        <Top>0.72849cm</Top>
-        <Left>5.21208cm</Left>
+        <Top>0.35278cm</Top>
+        <Left>3.19828cm</Left>
         <Height>2.28451cm</Height>
-        <Width>8.01095cm</Width>
+        <Width>11.85122cm</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -191,7 +186,6 @@
                 <Value>=First(Fields!FechaNac.Value, "DataSet1").ToString().Substring(0,10)</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
-                  <Color>White</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -272,7 +266,6 @@
                 <Value>=First(Fields!Email.Value, "DataSet1")</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
-                  <Color>White</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -305,7 +298,6 @@
                 <Value>=First(Fields!Telefono.Value, "DataSet1")</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
-                  <Color>White</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -332,7 +324,7 @@
     <Height>4.12025in</Height>
     <Style />
   </Body>
-  <Width>7.46875in</Width>
+  <Width>6.92708in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
