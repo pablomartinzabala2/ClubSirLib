@@ -20,6 +20,7 @@ namespace SistemaBase
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
+            txtCodigo.Text = "";
             Botonera(2);
             Grupo.Enabled = true;
             fun.LimpiarGenerico(this);
