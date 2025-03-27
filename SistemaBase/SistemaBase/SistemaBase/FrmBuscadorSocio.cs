@@ -135,7 +135,43 @@ namespace SistemaBase
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            Buscar();
+            if (cmb_CodCategoria.SelectedIndex > 0)
+            {
+                BuscarxCategoria();
+            }
+            else
+            {
+                Buscar();
+            }
+                
+        }
+
+        private void FrmBuscadorSocio_Load(object sender, EventArgs e)
+        {
+            cFunciones fun = new Clases.cFunciones();
+            //  fun.EstiloBotones(btnAceptar);
+            CargarCategoria();
+            CargarCombo();
+        }
+
+        private void CargarCategoria()
+        {
+            cFunciones fun = new cFunciones();
+            cCategoria cat = new cCategoria();
+            DataTable trdo = cat.GetCategoria();
+            fun.LlenarComboDatatable(cmb_CodCategoria, trdo, "Nombre", "CodCategoria");
+        }
+
+        private void BuscarxCategoria()
+        {
+            if (cmb_CodCategoria.SelectedIndex >0)
+            {
+                int CodCategoria = Convert.ToInt32(cmb_CodCategoria.SelectedValue);
+                cSocio socio = new cSocio();
+                DataTable trdo = socio.GetSocioxCategoria(CodCategoria);
+                Grilla.DataSource = trdo;
+                FormatoColumnas();
+            }
         }
     }
 }

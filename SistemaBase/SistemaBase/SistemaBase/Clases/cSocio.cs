@@ -26,5 +26,13 @@ namespace SistemaBase.Clases
             }
             return CodSocio;
         }
+
+        public DataTable GetSocioxCategoria(int CodCategoria)
+        {
+            string sql = "select CodSocio,Nombre,Apellido,NroDoc ";
+            sql = sql + " from Socio s";
+            sql = sql + " where CodCategoria=" + CodCategoria.ToString();
+            return cDb.GetDatatable(sql);
+        }
     }
 }

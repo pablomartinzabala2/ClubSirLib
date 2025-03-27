@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBuscadorSocio));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmb_CodCategoria = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.Grilla = new System.Windows.Forms.DataGridView();
@@ -41,19 +43,40 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmb_CodCategoria);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.btnAceptar);
             this.groupBox1.Controls.Add(this.txtBuscar);
             this.groupBox1.Controls.Add(this.Grilla);
             this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Controls.Add(this.Combo);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(-9, -12);
+            this.groupBox1.Location = new System.Drawing.Point(13, 2);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(678, 527);
+            this.groupBox1.Size = new System.Drawing.Size(678, 518);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
+            // 
+            // cmb_CodCategoria
+            // 
+            this.cmb_CodCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_CodCategoria.FormattingEnabled = true;
+            this.cmb_CodCategoria.Location = new System.Drawing.Point(262, 55);
+            this.cmb_CodCategoria.Name = "cmb_CodCategoria";
+            this.cmb_CodCategoria.Size = new System.Drawing.Size(313, 24);
+            this.cmb_CodCategoria.TabIndex = 54;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(22, 62);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(140, 17);
+            this.label6.TabIndex = 53;
+            this.label6.Text = "Buscar por categoria";
             // 
             // btnAceptar
             // 
@@ -78,12 +101,12 @@
             // Grilla
             // 
             this.Grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Grilla.Location = new System.Drawing.Point(25, 56);
+            this.Grilla.Location = new System.Drawing.Point(25, 95);
             this.Grilla.Margin = new System.Windows.Forms.Padding(4);
             this.Grilla.Name = "Grilla";
             this.Grilla.ReadOnly = true;
             this.Grilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Grilla.Size = new System.Drawing.Size(644, 409);
+            this.Grilla.Size = new System.Drawing.Size(644, 370);
             this.Grilla.TabIndex = 50;
             // 
             // btnBuscar
@@ -111,11 +134,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(660, 502);
+            this.ClientSize = new System.Drawing.Size(686, 533);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmBuscadorSocio";
-            this.Text = "FrmBuscadorSocio";
+            this.Text = "Formulario para buscar Socio";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.FrmBuscadorSocio_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grilla)).EndInit();
@@ -131,5 +156,7 @@
         private System.Windows.Forms.DataGridView Grilla;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.ComboBox Combo;
+        private System.Windows.Forms.ComboBox cmb_CodCategoria;
+        private System.Windows.Forms.Label label6;
     }
 }
