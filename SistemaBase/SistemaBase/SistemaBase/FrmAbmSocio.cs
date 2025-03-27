@@ -120,13 +120,13 @@ namespace SistemaBase
         }
 
         private void btnAbrir_Click(object sender, EventArgs e)
-        {
+        {   
             Principal.OpcionesdeBusqueda = "Nombre;Apellido;NroDoc";
             Principal.TablaPrincipal = "Socio";
             Principal.OpcionesColumnasGrilla = "CodSocio;Nombre;Apellido;NroDoc";
             Principal.ColumnasVisibles = "0;1;1;1";
             Principal.ColumnasAncho = "0;250;250;80";
-            FrmBuscadorGenerico form = new FrmBuscadorGenerico();
+            FrmBuscadorSocio form = new FrmBuscadorSocio();
             form.FormClosing += new FormClosingEventHandler(form_FormClosing);
             form.ShowDialog();
         }

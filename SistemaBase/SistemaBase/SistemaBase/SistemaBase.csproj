@@ -105,6 +105,12 @@
     <Compile Include="FrmBuscadorGenerico.Designer.cs">
       <DependentUpon>FrmBuscadorGenerico.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBuscadorSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscadorSocio.Designer.cs">
+      <DependentUpon>FrmBuscadorSocio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmImportarExcel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBuscadorGenerico.resx">
       <DependentUpon>FrmBuscadorGenerico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscadorSocio.resx">
+      <DependentUpon>FrmBuscadorSocio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmImportarExcel.resx">
       <DependentUpon>FrmImportarExcel.cs</DependentUpon>

@@ -49,3 +49,4 @@ D:\PROGRAMACION\CLUBSIRIO\ClubSirLib\SistemaBase\SistemaBase\SistemaBase\bin\Deb
 D:\PROGRAMACION\CLUBSIRIO\ClubSirLib\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.csprojResolveAssemblyReference.cache
 D:\PROGRAMACION\CLUBSIRIO\ClubSirLib\SistemaBase\SistemaBase\SistemaBase\obj\Debug\RdlCompile.cache
 D:\PROGRAMACION\CLUBSIRIO\ClubSirLib\SistemaBase\SistemaBase\SistemaBase\obj\Debug\RdlCompile.compiled
+D:\PROGRAMACION\CLUBSIRIO\ClubSirLib\SistemaBase\SistemaBase\SistemaBase\obj\Debug\SistemaBase.FrmBuscadorSocio.resources
