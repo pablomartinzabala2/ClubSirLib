@@ -34,5 +34,21 @@ namespace SistemaBase.Clases
             sql = sql + " where CodCategoria=" + CodCategoria.ToString();
             return cDb.GetDatatable(sql);
         }
+
+        public void InsertarSocioExcel(string Nombre, string Apellido, string NroDoc, string Telefono ,string Email, int Excel)
+        {
+            string sql = "insert into Socio(";
+            sql = sql + "Nombre,Apellido,NroDoc,Telefono,Email,Excel";
+            sql = sql + ")";
+            sql = sql + " values (";
+            sql = sql + "'" + Nombre + "'";
+            sql = sql + "," + "'" + Apellido + "'";
+            sql = sql + "," + "'" + NroDoc + "'";
+            sql = sql + ","  + "'" + Telefono + "'";
+            sql = sql  +"," + "'" + Email + "'";
+            sql = sql + "," + Excel.ToString();
+            sql = sql + ")";
+            cDb.Grabar(sql);
+        }
     }
 }

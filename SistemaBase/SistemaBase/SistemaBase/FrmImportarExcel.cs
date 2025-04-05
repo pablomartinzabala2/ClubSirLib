@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Microsoft.Office.Interop.Excel;
 using System.IO;
 using Excel = Microsoft.Office.Interop.Excel;
-
+using SistemaBase.Clases;
 
 namespace SistemaBase
 {
@@ -193,7 +193,7 @@ namespace SistemaBase
 
         private void Leer()
         {
-            /*
+            cSocio Socio = new cSocio();
             Excel.Application xlApp;
             Excel.Workbook xlWorkBook;
             Excel.Worksheet xlWorkSheet;
@@ -215,18 +215,16 @@ namespace SistemaBase
             range = xlWorkSheet.UsedRange;
             rw = range.Rows.Count;
             cl = range.Columns.Count;
-            string Codigo = "";
-            Int32? Id = 0;
-            int Stock = 0;
-            Double PrecioVenta = 0;
+
+
+            string Email = "";
+            string Apellido = "";
             string Nombre = "";
-            string Tipo = "";
-            Int32 CodTipo = 0;
-            cTipo objTipo = new cTipo();
-            cJoya joya = new Clases.cJoya();
-            Double? Costo = null;
-            cArticulo Articulo = new Clases.cArticulo();
-            for (rCnt = 2; rCnt <= rw; rCnt++)
+            Double NroDoc = 0;
+            Double Telefono = 0;
+            DateTime FechaNac = DateTime.Now;
+          
+            for (rCnt = 1; rCnt <= rw; rCnt++)
             {
                 for (cCnt = 1; cCnt <= cl; cCnt++)
                 {
@@ -235,53 +233,46 @@ namespace SistemaBase
                     {
                         case 1:
                             if ((range.Cells[rCnt, cCnt] as Excel.Range).Value2 != null)
-                                Id = (Int32)(range.Cells[rCnt, cCnt] as Excel.Range).Value2;
+                                Nombre = (range.Cells[rCnt, cCnt] as Excel.Range).Value2;
                             break;
+                            
                         case 2:
-                            if ((range.Cells[rCnt, cCnt] as Excel.Range).Value2 != null)
-                                Nombre = (string)(range.Cells[rCnt, cCnt] as Excel.Range).Value2;
-                            else
-                                Nombre = null;
+                            
                             break;
                         case 3:
-                            Tipo = (string)(range.Cells[rCnt, cCnt] as Excel.Range).Value2;
+                          //  Tipo = (string)(range.Cells[rCnt, cCnt] as Excel.Range).Value2;
                             // string[] vec = tip.Split();
                             // Tipo = vec[0];  
                             break;
-                        case 5:
+                        case 4:
                             if ((range.Cells[rCnt, cCnt] as Excel.Range).Value2 != null)
-                            { //Codigo
-                                Codigo = (string)(range.Cells[rCnt, cCnt] as Excel.Range).Value2;
-                                // string[] vec = Cod.Split(); ;
-                                //Codigo = vec[0]; 
+                            {
+                                NroDoc =(Double) (range.Cells[rCnt, cCnt] as Excel.Range).Value2;
                             }
-
+                            else 
+                            {
+                                NroDoc = 0;
+                            }
+                            
                             break;
+                       
                         case 6:
-                            if ((range.Cells[rCnt, cCnt] as Excel.Range).Value2 != null)
-                                Stock = (Int32)(range.Cells[rCnt, cCnt] as Excel.Range).Value2;
-                            else
-                                Stock = 0;
+                           
+                              
                             break;
                         case 9:
                             if ((range.Cells[rCnt, cCnt] as Excel.Range).Value2 != null)
-                                PrecioVenta = (Double)(range.Cells[rCnt, cCnt] as Excel.Range).Value2;
-                            else
-                                PrecioVenta = 0;
+                                Telefono =(Double)(range.Cells[rCnt, cCnt] as Excel.Range).Value2;
+                            break;
+                        case 10:
+                            if ((range.Cells[rCnt, cCnt] as Excel.Range).Value2 != null)
+                                Email = (range.Cells[rCnt, cCnt] as Excel.Range).Value2;
+
                             break;
                     }
                 }
                 Nombre = Nombre.Replace("'", "");
-                CodTipo = objTipo.GetCodxNombre(Tipo);
-                if (CodTipo == -1)
-                {
-                    if (Tipo != "")
-                        CodTipo = objTipo.Insertar(Tipo);
-                }
-                if (joya.Existexid(Convert.ToInt32(Id)) == false)
-                {
-                    joya.Insertar(Nombre, CodTipo, Convert.ToInt32(Id), Stock, PrecioVenta, Codigo);
-                }
+                Socio.InsertarSocioExcel(Nombre, Apellido, NroDoc.ToString (), Telefono.ToString (), Email, 1);
 
             }
             string msj = "Filas recorridos " + rCnt.ToString();
@@ -292,7 +283,7 @@ namespace SistemaBase
             // Marshal.ReleaseComObject(xlWorkSheet);
             // Marshal.ReleaseComObject(xlWorkBook);
             //  Marshal.ReleaseComObject(xlApp);
-            */
+            
         }
 
         public void ProcesarExcel()
@@ -308,6 +299,11 @@ namespace SistemaBase
                 fila++;
             }
             */
+        }
+
+        private void btnAbrirImagen_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

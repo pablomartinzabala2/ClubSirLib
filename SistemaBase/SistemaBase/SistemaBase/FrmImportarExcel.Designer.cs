@@ -39,9 +39,10 @@
             // radioVendedoras
             // 
             this.radioVendedoras.AutoSize = true;
-            this.radioVendedoras.Location = new System.Drawing.Point(111, 34);
+            this.radioVendedoras.Location = new System.Drawing.Point(148, 42);
+            this.radioVendedoras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioVendedoras.Name = "radioVendedoras";
-            this.radioVendedoras.Size = new System.Drawing.Size(82, 17);
+            this.radioVendedoras.Size = new System.Drawing.Size(103, 21);
             this.radioVendedoras.TabIndex = 24;
             this.radioVendedoras.Text = "Vendedoras";
             this.radioVendedoras.UseVisualStyleBackColor = true;
@@ -50,9 +51,10 @@
             // 
             this.RadioJoyas.AutoSize = true;
             this.RadioJoyas.Checked = true;
-            this.RadioJoyas.Location = new System.Drawing.Point(32, 34);
+            this.RadioJoyas.Location = new System.Drawing.Point(43, 42);
+            this.RadioJoyas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RadioJoyas.Name = "RadioJoyas";
-            this.RadioJoyas.Size = new System.Drawing.Size(52, 17);
+            this.RadioJoyas.Size = new System.Drawing.Size(63, 21);
             this.RadioJoyas.TabIndex = 23;
             this.RadioJoyas.TabStop = true;
             this.RadioJoyas.Text = "Joyas";
@@ -61,33 +63,38 @@
             // txt_Ruta
             // 
             this.txt_Ruta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Ruta.Location = new System.Drawing.Point(32, 107);
+            this.txt_Ruta.Location = new System.Drawing.Point(43, 132);
+            this.txt_Ruta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_Ruta.Name = "txt_Ruta";
-            this.txt_Ruta.Size = new System.Drawing.Size(230, 26);
+            this.txt_Ruta.Size = new System.Drawing.Size(305, 26);
             this.txt_Ruta.TabIndex = 22;
             // 
             // btnAbrirImagen
             // 
-            this.btnAbrirImagen.Location = new System.Drawing.Point(32, 139);
+            this.btnAbrirImagen.Location = new System.Drawing.Point(43, 171);
+            this.btnAbrirImagen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAbrirImagen.Name = "btnAbrirImagen";
-            this.btnAbrirImagen.Size = new System.Drawing.Size(102, 34);
+            this.btnAbrirImagen.Size = new System.Drawing.Size(136, 42);
             this.btnAbrirImagen.TabIndex = 21;
             this.btnAbrirImagen.Text = "Seleccionar";
             this.btnAbrirImagen.UseVisualStyleBackColor = true;
+            this.btnAbrirImagen.Click += new System.EventHandler(this.btnAbrirImagen_Click);
             // 
             // txtProceso
             // 
             this.txtProceso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProceso.Location = new System.Drawing.Point(162, 75);
+            this.txtProceso.Location = new System.Drawing.Point(216, 92);
+            this.txtProceso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtProceso.Name = "txtProceso";
-            this.txtProceso.Size = new System.Drawing.Size(100, 26);
+            this.txtProceso.Size = new System.Drawing.Size(132, 26);
             this.txtProceso.TabIndex = 20;
             // 
             // btnAbrir
             // 
-            this.btnAbrir.Location = new System.Drawing.Point(32, 73);
+            this.btnAbrir.Location = new System.Drawing.Point(43, 90);
+            this.btnAbrir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAbrir.Name = "btnAbrir";
-            this.btnAbrir.Size = new System.Drawing.Size(109, 28);
+            this.btnAbrir.Size = new System.Drawing.Size(145, 34);
             this.btnAbrir.TabIndex = 19;
             this.btnAbrir.Text = "Procesar ";
             this.btnAbrir.UseVisualStyleBackColor = true;
@@ -95,15 +102,16 @@
             // 
             // FrmImportarExcel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(609, 416);
+            this.ClientSize = new System.Drawing.Size(812, 512);
             this.Controls.Add(this.radioVendedoras);
             this.Controls.Add(this.RadioJoyas);
             this.Controls.Add(this.txt_Ruta);
             this.Controls.Add(this.btnAbrirImagen);
             this.Controls.Add(this.txtProceso);
             this.Controls.Add(this.btnAbrir);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "FrmImportarExcel";
             this.Text = "FrmImportarExcel";
             this.ResumeLayout(false);
