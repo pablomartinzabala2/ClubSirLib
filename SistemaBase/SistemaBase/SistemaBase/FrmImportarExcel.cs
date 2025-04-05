@@ -222,9 +222,11 @@ namespace SistemaBase
             string Nombre = "";
             Double NroDoc = 0;
             Double Telefono = 0;
+            String Ocupacion = "";
+            string Direccion = "";
             DateTime FechaNac = DateTime.Now;
           
-            for (rCnt = 1; rCnt <= rw; rCnt++)
+            for (rCnt = 2; rCnt <= rw; rCnt++)
             {
                 for (cCnt = 1; cCnt <= cl; cCnt++)
                 {
@@ -237,14 +239,15 @@ namespace SistemaBase
                             break;
                             
                         case 2:
-                            
+                            if ((range.Cells[rCnt, cCnt] as Excel.Range).Value2 != null)
+                                Apellido = (range.Cells[rCnt, cCnt] as Excel.Range).Value2;
                             break;
                         case 3:
                           //  Tipo = (string)(range.Cells[rCnt, cCnt] as Excel.Range).Value2;
                             // string[] vec = tip.Split();
                             // Tipo = vec[0];  
                             break;
-                        case 4:
+                        case 5:
                             if ((range.Cells[rCnt, cCnt] as Excel.Range).Value2 != null)
                             {
                                 NroDoc =(Double) (range.Cells[rCnt, cCnt] as Excel.Range).Value2;
@@ -255,16 +258,20 @@ namespace SistemaBase
                             }
                             
                             break;
-                       
-                        case 6:
-                           
-                              
+
+                        case 8:
+                            if ((range.Cells[rCnt, cCnt] as Excel.Range).Value2 != null)
+                                Ocupacion = (range.Cells[rCnt, cCnt] as Excel.Range).Value2;
                             break;
                         case 9:
                             if ((range.Cells[rCnt, cCnt] as Excel.Range).Value2 != null)
+                                Direccion = (range.Cells[rCnt, cCnt] as Excel.Range).Value2;
+                            break;
+                        case 11:
+                            if ((range.Cells[rCnt, cCnt] as Excel.Range).Value2 != null)
                                 Telefono =(Double)(range.Cells[rCnt, cCnt] as Excel.Range).Value2;
                             break;
-                        case 10:
+                        case 12:
                             if ((range.Cells[rCnt, cCnt] as Excel.Range).Value2 != null)
                                 Email = (range.Cells[rCnt, cCnt] as Excel.Range).Value2;
 
@@ -272,7 +279,7 @@ namespace SistemaBase
                     }
                 }
                 Nombre = Nombre.Replace("'", "");
-                Socio.InsertarSocioExcel(Nombre, Apellido, NroDoc.ToString (), Telefono.ToString (), Email, 1);
+                Socio.InsertarSocioExcel(Nombre, Apellido, NroDoc.ToString (), Telefono.ToString (), Email, 1, Ocupacion, Direccion);
 
             }
             string msj = "Filas recorridos " + rCnt.ToString();

@@ -35,10 +35,11 @@ namespace SistemaBase.Clases
             return cDb.GetDatatable(sql);
         }
 
-        public void InsertarSocioExcel(string Nombre, string Apellido, string NroDoc, string Telefono ,string Email, int Excel)
+        public void InsertarSocioExcel(string Nombre, string Apellido, string NroDoc, string Telefono ,
+            string Email, int Excel, string Ocupacion, string Direccion)
         {
             string sql = "insert into Socio(";
-            sql = sql + "Nombre,Apellido,NroDoc,Telefono,Email,Excel";
+            sql = sql + "Nombre,Apellido,NroDoc,Telefono,Email,Excel,Ocupacion , Direccion";
             sql = sql + ")";
             sql = sql + " values (";
             sql = sql + "'" + Nombre + "'";
@@ -47,7 +48,9 @@ namespace SistemaBase.Clases
             sql = sql + ","  + "'" + Telefono + "'";
             sql = sql  +"," + "'" + Email + "'";
             sql = sql + "," + Excel.ToString();
-            sql = sql + ")";
+            sql = sql + "," + "'" + Ocupacion + "'";
+            sql = sql + "," + "'" + Direccion + "'";
+            sql = sql + ")";  
             cDb.Grabar(sql);
         }
     }

@@ -40,7 +40,7 @@
             // 
             this.radioVendedoras.AutoSize = true;
             this.radioVendedoras.Location = new System.Drawing.Point(148, 42);
-            this.radioVendedoras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioVendedoras.Margin = new System.Windows.Forms.Padding(4);
             this.radioVendedoras.Name = "radioVendedoras";
             this.radioVendedoras.Size = new System.Drawing.Size(103, 21);
             this.radioVendedoras.TabIndex = 24;
@@ -50,21 +50,22 @@
             // RadioJoyas
             // 
             this.RadioJoyas.AutoSize = true;
+            this.RadioJoyas.CausesValidation = false;
             this.RadioJoyas.Checked = true;
             this.RadioJoyas.Location = new System.Drawing.Point(43, 42);
-            this.RadioJoyas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RadioJoyas.Margin = new System.Windows.Forms.Padding(4);
             this.RadioJoyas.Name = "RadioJoyas";
-            this.RadioJoyas.Size = new System.Drawing.Size(63, 21);
+            this.RadioJoyas.Size = new System.Drawing.Size(68, 21);
             this.RadioJoyas.TabIndex = 23;
             this.RadioJoyas.TabStop = true;
-            this.RadioJoyas.Text = "Joyas";
+            this.RadioJoyas.Text = "Socios";
             this.RadioJoyas.UseVisualStyleBackColor = true;
             // 
             // txt_Ruta
             // 
             this.txt_Ruta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Ruta.Location = new System.Drawing.Point(43, 132);
-            this.txt_Ruta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Ruta.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Ruta.Name = "txt_Ruta";
             this.txt_Ruta.Size = new System.Drawing.Size(305, 26);
             this.txt_Ruta.TabIndex = 22;
@@ -72,7 +73,7 @@
             // btnAbrirImagen
             // 
             this.btnAbrirImagen.Location = new System.Drawing.Point(43, 171);
-            this.btnAbrirImagen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAbrirImagen.Margin = new System.Windows.Forms.Padding(4);
             this.btnAbrirImagen.Name = "btnAbrirImagen";
             this.btnAbrirImagen.Size = new System.Drawing.Size(136, 42);
             this.btnAbrirImagen.TabIndex = 21;
@@ -84,7 +85,7 @@
             // 
             this.txtProceso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProceso.Location = new System.Drawing.Point(216, 92);
-            this.txtProceso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProceso.Margin = new System.Windows.Forms.Padding(4);
             this.txtProceso.Name = "txtProceso";
             this.txtProceso.Size = new System.Drawing.Size(132, 26);
             this.txtProceso.TabIndex = 20;
@@ -92,7 +93,7 @@
             // btnAbrir
             // 
             this.btnAbrir.Location = new System.Drawing.Point(43, 90);
-            this.btnAbrir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAbrir.Margin = new System.Windows.Forms.Padding(4);
             this.btnAbrir.Name = "btnAbrir";
             this.btnAbrir.Size = new System.Drawing.Size(145, 34);
             this.btnAbrir.TabIndex = 19;
@@ -111,7 +112,7 @@
             this.Controls.Add(this.btnAbrirImagen);
             this.Controls.Add(this.txtProceso);
             this.Controls.Add(this.btnAbrir);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmImportarExcel";
             this.Text = "FrmImportarExcel";
             this.ResumeLayout(false);

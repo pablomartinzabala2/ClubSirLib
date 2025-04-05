@@ -191,7 +191,7 @@
     <EmbeddedResource Include="ReporteInforme.rdlc" />
     <EmbeddedResource Include="ReporteParametro.rdlc" />
     <EmbeddedResource Include="ReporteSocio.rdlc" />
-    <EmbeddedResource Include="Reporte\ReporteSocio2.rdlc" />
+    <EmbeddedResource Include="Iconos\Reporte\ReporteSocio2.rdlc" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
