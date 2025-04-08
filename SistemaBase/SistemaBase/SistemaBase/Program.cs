@@ -15,9 +15,9 @@ namespace SistemaBase
         static void Main()
         {       
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-           //  Application.Run(new FrmLogin());
-              Application.Run(new FrmImportarExcel());
+          //  Application.SetCompatibleTextRenderingDefault(false);
+             Application.Run(new FrmLogin());
+           //   Application.Run(new FrmImportarExcel());
             //   Principal.CodSocio = 7;
             //  Application.Run(new FrmReporteSociocs());
         }

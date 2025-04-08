@@ -121,5 +121,11 @@ namespace SistemaBase
         {
 
         }
+
+        private void saveToolStripButton_Click(object sender, EventArgs e)
+        {
+            FrmImportarExcel frm = new FrmImportarExcel();
+            frm.Show();
+        }
     }
 }
