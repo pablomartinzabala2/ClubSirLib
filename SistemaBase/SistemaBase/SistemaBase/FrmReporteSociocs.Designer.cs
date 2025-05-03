@@ -53,7 +53,7 @@
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.SocioBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "SistemaBase.Reporte.ReporteSocio2.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "SistemaBase.ReporteSocio2.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 2);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(634, 527);
